@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+  --Primary-Red: hsl(0, 78%, 62%);
+  --Primary-Cyan: hsl(180, 62%, 55%);
+  --Primary-Orange: hsl(34, 97%, 64%);
+  --Primary-Blue: hsl(212, 86%, 64%);
+
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+  background-color: var(--Very-Light-Gray);
+  font-family: "Poppins";
+}
+
+main{
+  max-width: 1140px;
+  margin: 4em auto;
+}
+
+.heading-1, heading-2, .topic {
+  color: var(--Very-Dark-Blue);
+}
+
+.sub-heading, .description {
+  color: var(--Grayish-Blue);
+}
+
+.main-headings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+ 
+}
+
+.heading-1 {
+  font-size: 35px;
+  font-weight: 200;
+}
+
+.heading-2 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.sub-heading {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 200;
+  max-width: 35.5em;
+  margin-top: 14px;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 55px;
+}
+
+.center-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Very-Light-Gray);
+  height: 10.5em;
+  width: 18em;
+  padding: 1.5em;  
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px 0px rgba(0,0,0,0.1);
+}
+
+.supervisor {
+  border-top: 3px solid var(--Primary-Cyan);
+}
+
+.team-builder {
+  border-top: 3px solid var(--Primary-Red);
+}
+
+.karma {
+  border-top: 3px solid var(--Primary-Orange);
+}
+
+.calculator {
+  border-top: 3px solid var(--Primary-Blue);
+}
+
+.supervisor, .calculator {
+  align-self: center;
+}
+
+.topic {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 200;
+  margin: 5px 0 30px 0;
+}
+
+.icon {
+  align-self: flex-end;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width: 375px) {
+  .container-flex {
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  .heading-1, .heading-2 {
+    font-size: 26px;
+  }  
+}
